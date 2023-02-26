@@ -1,0 +1,38 @@
+var listaItens: string[] = [];
+const exibirLista = document.querySelector(".title");
+
+function addItemToList() { // adiciona um item à lista
+  const item: any = document.querySelector("#itemForm");
+  listaItens[listaItens.length] = item.value;
+  item.value = "";
+  update();
+};
+
+function update() { // atualiza a exibição da lista
+  const cont: any = document.querySelector(".lista");
+  cont.innerHTML = "";
+  for (var i in listaItens) {
+    cont.innerHTML += `
+    <div class="container">
+    <article class="item">
+        <p class="title">
+        <div class="itemContainer">${listaItens[i]}</div>
+        <div class="buttonContainer" onclick="remove(${i})">
+            <button class="deleteButton"><img src="https://icongr.am/clarity/remove.svg?size=18&color=currentColor" alt=""></button>
+        </div>
+    </p>
+    </article>
+  </div>
+  `;
+  }
+};
+
+function remove(id: number){ // exclui um item especifico da lista
+  listaItens.splice(id,1)
+  update()
+};
+
+function clearItems(){ // exclui todos os itens da lista
+  listaItens = []
+  update()
+};

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/dist/js/app.js"></script>
+</head>
+<body>
+    <section class="sectioncenter">
+        <!--form-->
+        <div class="listaForm">
+            <p class="alerta"></p>
+            <h3>Lista de compras</h3>
+            <div>
+                <input type="text" placeholder="ex: ovos, leite, carne" id="itemForm">
+                <button class="addButton" onclick="addItemToList()">Adicionar</button>
+            </div>
+        </div>
+        <!--lista-->
+        <div class="lista">
+        </div>
+        <div>
+            <br>
+            <button class="clear" onclick="clearItems()"><h4>Limpar itens</h4></button>
+        </div>
+    </section>
+</body>
+</html>

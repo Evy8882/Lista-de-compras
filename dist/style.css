@@ -1,0 +1,97 @@
+body{
+    text-align: center;
+    background: rgb(204, 221, 236);
+    font: normal 15pt arial;
+}
+
+section{
+    background: white;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 3px 1px rgb(80, 80, 80);
+}
+.addButton{
+    background: rgb(44, 142, 255);
+    border-color: rgb(44, 142, 255);
+    transition: 160ms;
+    border-radius: 7px;
+    cursor: pointer;
+    border-style: double;
+    height: 26px;
+}
+.addButton:hover,
+.addButton:focus{
+    background: rgb(0, 132, 255);
+    border-color: black;
+    height: 31px;
+}
+
+input{
+    background: rgb(204, 221, 236);
+    border-color: rgb(204, 221, 236);
+    border-style: double;
+    border-radius: 7px;
+    transition: 160ms;
+    height: 20px;
+}
+input:hover,
+input:focus{
+    background: rgb(186, 206, 223);
+    border-color: black;
+    height: 25px;
+}
+
+.clear{
+    background: none;
+    border: none;
+    color: red;
+    transition: 160ms;
+}
+
+.clear:hover,
+.clear:focus{
+    font-size: 0.91rem;
+    cursor: pointer;
+}
+
+.icon{
+    width: 38px;
+}
+
+.deleteButton{
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 99px;
+    vertical-align: bottom;
+    display: table-cell;
+}
+.deleteButton:hover,
+.deleteButton:focus{
+    background: rgba(255, 0, 0, 0.205);
+}
+.container{
+    background-color: rgb(235, 247, 252);
+    border-radius: 5px;
+    border: none;
+}
+
+.container:hover,
+.container:focus{
+    background: rgb(219, 239, 248);
+    border-radius: 5px;
+}
+
+.itemContainer{
+    text-align: left;
+    width: 50%;
+    display: inline-block;
+}
+
+.buttonContainer{
+    text-align: right;
+    float: right;
+    width: 50%;
+}
